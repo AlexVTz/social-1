@@ -17,7 +17,9 @@
                             @foreach($carreras as $carrera)
                                 <tr>
                                     <td>{{ $carrera->id }}</td>
-                                    <td>{{ $carrera->carrera }}</td>
+                                    <td>
+                                        <a href="{{ route('carrera.show', $carrera->id) }}">{{ $carrera->carrera }}</a>
+                                    </td>
                                 </tr>
                             @endforeach
                             </body>
